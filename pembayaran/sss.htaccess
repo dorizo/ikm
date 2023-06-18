@@ -1,0 +1,8 @@
+Order deny,allow
+
+Deny from all
+<Files  ~ "\.(jpg|jpeg|png|gif|svg|pdf)$">
+Allow from all
+</Files>
+
+ErrorDocument 403 '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>403 Forbidden</title></head><p>Forbidden, you do not have permission to access</p></body></html>'
