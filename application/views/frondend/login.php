@@ -42,7 +42,6 @@
 
          <div class="login-body">
             <h5 class="fw-bold">Welcome Back</h5>
-            <p class="mb-0">Login to your account to continue your shopping</p>
             <form class="mt-4" method="post">
 
               <div class="form-floating mb-3">
