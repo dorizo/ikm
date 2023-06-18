@@ -8,7 +8,7 @@
     <div class="mb-3 border p-3 rounded-3">
         <div class="d-flex align-items-center flex-row flex-wrap flex-fill justify-content-between gap-3">
             <h6>Uang Kas : </h6>
-            <p>Rp 20.000.0000</p>
+            <p>Rp 20.000.0000 n</p>
         </div>
     </div>
 
