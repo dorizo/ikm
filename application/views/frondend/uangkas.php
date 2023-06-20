@@ -70,7 +70,7 @@
                   </span>
                   <h6 class="fw-bold">AGUSTUS</h6>
                   <p class="text-muted mb-0 fw-bold">26 March 2020</p>
-                </li>
+                </li> 
               </ul>
 
           </div>
