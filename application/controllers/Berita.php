@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile extends CI_Controller {
+class Berita extends CI_Controller {
 
 	
 	public function __construct()
@@ -20,9 +20,9 @@ class Profile extends CI_Controller {
 	}
 
     public function index(){
-		$data["title"] = "PROFILE";
+		$data["title"] = "Berita";
 		
-		$this->load->view('frondend/profile' , $data);
+		$this->load->view('frondend/iuran' , $data);
 
     }
 

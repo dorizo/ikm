@@ -4,8 +4,18 @@
       <!--start to page content-->
       <div class="page-content">
 <?php $xxxx = $this->db->query("select * from konfigurasi")->row(); ?>
-      <h4><?=$xxxx->singkatan?></h4>
-      <p><?=$xxxx->tentang?></p>
+<div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                        <h4><?=$xxxx->singkatan?></h4>
+                     </div>
+                    <div class="card-body">
+                    <p><?=$xxxx->tentang?></p>
+                    </div>
+                    
+                  </div>  
+                </div>
+      
 
 <div class="mb-3">
 <a class="profile-item" href="my-profile.html">

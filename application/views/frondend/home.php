@@ -53,10 +53,13 @@
                 <div class="card rounded-3 w-100">
                   <div class="card-body">
                     <div class="icon-wrapper text-center">
+                      
+                    <a href="<?=base_url("iuran")?>">
                       <div class="noti-box mb-1 mx-auto bg-purple">
                         <i class="bi bi-credit-card"></i>
                       </div>
                       <p class="fw-bold mb-0 text-dark">Pembayaran <br/>  Iuaran</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -64,13 +67,15 @@
               <div class="col d-flex">
                 <div class="card rounded-3 w-100">
                   <div class="card-body">
-                    <div class="icon-wrapper text-center">
-                      <div class="noti-box mb-1 mx-auto bg-green">
-                        <i class="bi bi-headset"></i>
+                    <a href="<?=base_url("berita")?>">
+                        <div class="icon-wrapper text-center">
+                          <div class="noti-box mb-1 mx-auto bg-green">
+                            <i class="bi bi-headset"></i>
+                          </div>
+                          <p class="fw-bold mb-0 text-dark">Berita <br/> IKM</p>
+                        </div>
                       </div>
-                      <p class="fw-bold mb-0 text-dark">Berita <br/> IKM</p>
-                    </div>
-                  </div>
+                    </a>
                 </div>
               </div>
             </div>
