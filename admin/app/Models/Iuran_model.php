@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class Iuran_model extends Model
 {
-    protected $table         = 'member';
-    protected $primaryKey    = 'memberCode';
+    protected $table         = 'iuran';
+    protected $primaryKey    = 'iuranCode';
     protected $allowedFields = [];
 
     // Listing
@@ -54,7 +54,7 @@ class Iuran_model extends Model
     // total
     public function total()
     {
-        $builder = $this->db->table('staff');
+        $builder = $this->db->table('iuran');
         $query   = $builder->get();
 
         return $query->getNumRows();
@@ -63,12 +63,12 @@ class Iuran_model extends Model
     // detail
     public function detail($id_staff)
     {
-        $builder = $this->db->table('staff');
-        $builder->select('staff.*, kategori_staff.nama_kategori_staff, kategori_staff.slug_kategori_staff, users.nama AS nama_admin');
-        $builder->join('kategori_staff', 'kategori_staff.id_kategori_staff = staff.id_kategori_staff', 'LEFT');
-        $builder->join('users', 'users.id_user = staff.id_user', 'LEFT');
-        $builder->where('staff.id_staff', $id_staff);
-        $builder->orderBy('staff.id_staff', 'DESC');
+        $builder = $this->db->table('iuran');
+        // $builder->select('staff.*, kategori_staff.nama_kategori_staff, kategori_staff.slug_kategori_staff, users.nama AS nama_admin');
+        $builder->join('member', 'iuran.memberCode = member.memberCode', 'LEFT');
+        // $builder->join('users', 'users.id_user = staff.id_user', 'LEFT');
+        $builder->where('iuran.iuranCode', $id_staff);
+        $builder->orderBy('iuran.iuranCode', 'DESC');
         $query = $builder->get();
 
         return $query->getRowArray();
@@ -84,8 +84,8 @@ class Iuran_model extends Model
     // tambah
     public function edit($data)
     {
-        $builder = $this->db->table('staff');
-        $builder->where('id_staff', $data['id_staff']);
+        $builder = $this->db->table('iuran');
+        $builder->where('iuranCode', $data['iuranCode']);
         $builder->update($data);
     }
 
