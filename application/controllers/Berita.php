@@ -22,7 +22,7 @@ class Berita extends CI_Controller {
     public function index(){
 		$data["title"] = "Berita";
 		
-		$this->load->view('frondend/iuran' , $data);
+		$this->load->view('frondend/berita' , $data);
 
     }
 
