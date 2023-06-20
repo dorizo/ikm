@@ -115,7 +115,7 @@ class Iuran extends BaseController
             return redirect()->to(base_url('admin/iuran'));
             
         }
-        $data = ['title'     => 'Edit Data Staff: ' . $staff['nama'],
+        $data = ['title'     => 'Edit Data Staff: ',
             'staff'          => $staff,
             'kategori_staff' => $kategori_staff,
             'content'        => 'admin/member/edit',
