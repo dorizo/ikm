@@ -68,7 +68,7 @@
                       <div class="noti-box mb-1 mx-auto bg-green">
                         <i class="bi bi-headset"></i>
                       </div>
-                      <p class="fw-bold mb-0 text-dark">Konfirmasi <br/> Iuaran</p>
+                      <p class="fw-bold mb-0 text-dark">Berita <br/> IKM</p>
                     </div>
                   </div>
                 </div>
