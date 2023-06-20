@@ -1,1 +1,3 @@
 /application/config/database.php
+/admin/app/Config/App.php
+/admin/app/Config/Database.php
