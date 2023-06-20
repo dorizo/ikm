@@ -230,9 +230,9 @@ $site        = $konfigurasi->listing();
           </li>
           <!-- panduan -->
           <li class="nav-item">
-            <a href="<?= base_url('admin/undangan') ?>" class="nav-link">
+            <a href="<?= base_url('admin/iuran') ?>" class="nav-link">
               <i class="nav-icon fas fa-file-pdf"></i>
-              <p>UNDANGAN</p>
+              <p>iuran</p>
             </a>
           </li>
           <!-- panduan -->
