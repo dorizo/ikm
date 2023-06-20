@@ -4,6 +4,7 @@
       <!--start to page content-->
       <div class="page-content">
 <?php $xxxx = $this->db->query("select * from konfigurasi")->row(); ?>
+      <h4><?=$xxxx->singkatan?></h4>
       <p><?=$xxxx->tentang?></p>
 
 <div class="mb-3">
