@@ -36,8 +36,8 @@ foreach ($staff as $staff) { ?>
 				</small>
 			</td>
 			<td>
-				<a href="<?= base_url('admin/staff/edit/' . $staff['id_anggota']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
-				<a href="<?= base_url('admin/staff/delete/' . $staff['id_anggota']) ?>" class="btn btn-dark btn-sm" onclick="confirmation(event)"><i class="fa fa-trash"></i></a>
+				<a href="<?= base_url('admin/staff/edit/' . $staff['iuranCode']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
+				<a href="<?= base_url('admin/staff/delete/' . $staff['iuranCode']) ?>" class="btn btn-dark btn-sm" onclick="confirmation(event)"><i class="fa fa-trash"></i></a>
 			</td>
 		</tr>
 		<?php $no++; } ?>
