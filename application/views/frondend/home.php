@@ -83,53 +83,26 @@
 
           <!--start reviews section-->
           <div class="reviews-section">
-            <h4 class="my-2 text-center fw-bold section-title">Client Reviews</h4>
+            <h4 class="my-2 text-center fw-bold section-title">IKM BERBICARA</h4>
 
             <div class="review-slider">
-              <div class="review-item p-3 border rounded-3 bg-light">
-                 <h6 class="client-name fw-bold">Michael Clarke</h6>
-                 <div class="ratings mb-2">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                </div>
-                <div class="review-text">
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
-                  <p class="text-end mb-0 reviw-date">10/06/2022 at 14:20:18</p>
-                </div>
-              </div>
-              <div class="review-item p-3 border rounded-3 bg-light">
-                <h6 class="client-name fw-bold">Michael Clarke</h6>
-                <div class="ratings mb-2">
-                 <i class="bi bi-star-fill text-warning"></i>
-                 <i class="bi bi-star-fill text-warning"></i>
-                 <i class="bi bi-star-fill text-warning"></i>
-                 <i class="bi bi-star-fill text-warning"></i>
-                 <i class="bi bi-star-fill text-warning"></i>
-               </div>
-               <div class="review-text">
-                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
-                 <p class="text-end mb-0 reviw-date">10/06/2022 at 14:20:18</p>
-               </div>
-             </div>
+              <?php
+              $variable = $this->db->query("select * from client")->result_array();
+              foreach ($variable as $key => $value) {
+              
+              ?>
              <div class="review-item p-3 border rounded-3 bg-light">
-              <h6 class="client-name fw-bold">Michael Clarke</h6>
-              <div class="ratings mb-2">
-               <i class="bi bi-star-fill text-warning"></i>
-               <i class="bi bi-star-fill text-warning"></i>
-               <i class="bi bi-star-fill text-warning"></i>
-               <i class="bi bi-star-fill text-warning"></i>
-               <i class="bi bi-star-fill text-warning"></i>
-             </div>
-             <div class="review-text">
-               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
-               <p class="text-end mb-0 reviw-date">10/06/2022 at 14:20:18</p>
-             </div>
+                  <h6 class="client-name fw-bold"><?=$value["pimpinan"]?></h6>
+                
+                <div class="review-text">
+                  <p><?php print_r($value["isi_testimoni"])?></p>
+                  <p class="text-end mb-0 reviw-date"><?=$value["tanggal"]?></p>
+                </div>
             </div>
+            <?php
+            }
+            ?>
             </div>
-
           </div>
           <!--end reviews section-->
 
