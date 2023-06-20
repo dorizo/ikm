@@ -52,8 +52,8 @@ foreach ($staff as $staff) { ?>
             <br><i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=13 AND kode='".$staff["desa_asal"]."'")->getRow()->nama ?>
 			 </td>
 			<td>
-				<a href="<?= base_url('admin/staff/edit/' . $staff['id_staff']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
-				<a href="<?= base_url('admin/staff/delete/' . $staff['id_staff']) ?>" class="btn btn-dark btn-sm" onclick="confirmation(event)"><i class="fa fa-trash"></i></a>
+				<a href="<?= base_url('admin/staff/edit/' . $staff['memberCode']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
+				<a href="<?= base_url('admin/staff/delete/' . $staff['memberCode']) ?>" class="btn btn-dark btn-sm" onclick="confirmation(event)"><i class="fa fa-trash"></i></a>
 			</td>
 		</tr>
 		<?php $no++; } ?>
