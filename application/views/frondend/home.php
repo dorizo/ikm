@@ -56,7 +56,7 @@
                       <div class="noti-box mb-1 mx-auto bg-purple">
                         <i class="bi bi-credit-card"></i>
                       </div>
-                      <p class="fw-bold mb-0 text-dark">Pembayaran Iuaran</p>
+                      <p class="fw-bold mb-0 text-dark">Pembayaran <br/>  Iuaran</p>
                     </div>
                   </div>
                 </div>
