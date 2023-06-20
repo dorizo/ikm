@@ -109,7 +109,7 @@ class Iuran extends BaseController
                
             ]
         )) {
-            $data = ['konfirmasi' =>$this->request->getPost("konfirmasi"),'iuranCode' =>$this->request->getPost("iuranCode")];
+            $data = ['konfirmasi' =>$this->request->getPost("konfirmasi"),'iuranCode' =>$this->request->getPost("iuranCode"),'jumlah' =>$this->request->getPost("jumlah")];
             
             $m_staff->edit($data);
             return redirect()->to(base_url('admin/iuran'));

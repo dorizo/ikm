@@ -24,7 +24,7 @@ foreach ($staff as $staff) { ?>
 			<td><?= $no ?></td>
 			<td><?= $staff['nama_lengkap'] ?>
 			</td>
-			<td><?= $staff['jumlah'] ?></td>
+			<td><?= angka($staff['jumlah']) ?></td>
 			<td>
 				<small><i class="fa fa-phone"></i> <?= $staff['no_telp'] ?>
 				

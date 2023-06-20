@@ -8,7 +8,14 @@
 	<input type="text" disabled name="nama_lengkap" class="form-control" placeholder="Nama staff" value="<?= $staff['nama_lengkap'] ?>" required>
 	</div>
 </div>
-
+	
+<div class="form-group row">
+	<label class="col-3">Jumlah</label>
+	
+	<div class="col-9">
+    <input type="text"  name="jumlah" class="form-control" placeholder="Nama staff" value="<?= $staff['jumlah'] ?>" required>
+	</div>
+</div>
 <div class="form-group row">
 	<label class="col-3">Jenis, Status Staff</label>
 	
