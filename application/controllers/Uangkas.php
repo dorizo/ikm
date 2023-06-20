@@ -21,6 +21,8 @@ class Uangkas extends CI_Controller {
 
     public function index(){
 		$data["title"] = "IKATAN KELUARGA MANDALA";
+		$data["query"] = $this->db->query("select sum(jumlah) as j from iuran where konfirmasi=1")->row();
+		$data["dataresult"] = $this->db->query("select * from iuran JOIN member ON member.memberCode=iuran.memberCode where konfirmasi=1")->result_array();
 		
 		$this->load->view('frondend/uangkas' , $data);
 
