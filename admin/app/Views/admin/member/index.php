@@ -28,28 +28,28 @@ foreach ($staff as $staff) { ?>
 				</small>
 			</td>
 			<td>
-				<br><i class="fa fa-envelope"></i> <?= $staff['Pekerjaan'] ?>
-				<br><i class="fa fa-envelope"></i> <?= $staff['tempat_bekerja'] ?>
+				-</i> <?= $staff['Pekerjaan'] ?>
+				-</i> <?= $staff['tempat_bekerja'] ?>
                 
             </td>
 			<td><small><i class="fa fa-phone"></i> <?= $staff['no_telp'] ?>
-				<br><i class="fa fa-envelope"></i> <?= $staff['no_ktp'] ?>
+				-</i> <?= $staff['no_ktp'] ?>
 				<br><i class="fa fa-globe"></i> <?= $staff['akun_instagram'] ?>
 				</small>
 			</td>
             <td>
 
             Alamat Tinggal <br />
-            <i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=2 AND kode='".$staff["prov_tinggal"]."'")->getRow()->nama ?>
-            <br><i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=5 AND kode='".$staff["kab_tinggal"]."'")->getRow()->nama ?>
-            <br><i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=8 AND kode='".$staff["kec_tinggal"]."'")->getRow()->nama ?>
-            <br><i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=13 AND kode='".$staff["desa_tinggal"]."'")->getRow()->nama ?>
+            <i class="fa fa-globe"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=2 AND kode='".$staff["prov_tinggal"]."'")->getRow()->nama ?>
+            - </i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=5 AND kode='".$staff["kab_tinggal"]."'")->getRow()->nama ?>
+            -</i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=8 AND kode='".$staff["kec_tinggal"]."'")->getRow()->nama ?>
+            -</i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=13 AND kode='".$staff["desa_tinggal"]."'")->getRow()->nama ?>
 			<hr />
             Alamat Asal <br />	
-            <i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=2 AND kode='".$staff["prov_asal"]."'")->getRow()->nama ?>
-            <br><i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=5 AND kode='".$staff["kab_asal"]."'")->getRow()->nama ?>
-            <br><i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=8 AND kode='".$staff["kec_asal"]."'")->getRow()->nama ?>
-            <br><i class="fa fa-envelope"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=13 AND kode='".$staff["desa_asal"]."'")->getRow()->nama ?>
+            <i class="fa fa-globe"></i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=2 AND kode='".$staff["prov_asal"]."'")->getRow()->nama ?>
+            -</i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=5 AND kode='".$staff["kab_asal"]."'")->getRow()->nama ?>
+            -</i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=8 AND kode='".$staff["kec_asal"]."'")->getRow()->nama ?>
+            -</i> <?=$db->query("SELECT * FROM (SELECT kode , nama,CHAR_LENGTH(kode) as lengthkode FROM `wilayah_2022`) A where lengthkode=13 AND kode='".$staff["desa_asal"]."'")->getRow()->nama ?>
 			 </td>
 			<td>
 				<a href="<?= base_url('admin/staff/edit/' . $staff['memberCode']) ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a>
