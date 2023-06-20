@@ -36,7 +36,7 @@
        <!--start to header-->
        <header class="top-header fixed-top border-bottom d-flex align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
-            <div class="brand-logo"><a href="javascript:;">
+            <div class="brand-logo">
                 <!-- <img src="<?=base_url("thames")?>/images/logo.webp" width="95" alt=""></a> -->
                 <h6><?=$title?></h6>
             </div>
