@@ -19,7 +19,7 @@
     <link href="<?=base_url("thames")?>/css/dark-theme.css" rel="stylesheet"/>
   </head>
   <body>
-
+ 
    <!--page loader-->
     <div class="loader-wrapper">
       <div class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
