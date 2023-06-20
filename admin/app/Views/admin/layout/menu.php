@@ -161,29 +161,29 @@ $site        = $konfigurasi->listing();
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-image"></i>
-              <p>Staff &amp; Team
+              <p>Member &amp; Komunitas
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?= base_url('admin/staff') ?>" class="nav-link">
+                <a href="<?= base_url('admin/member') ?>" class="nav-link">
                   <i class="fas fa-table nav-icon"></i>
-                  <p>Data Staff/Team</p>
+                  <p>Data Member</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="<?= base_url('admin/staff/tambah') ?>" class="nav-link">
                   <i class="fas fa-plus nav-icon"></i>
                   <p>Tambah Staff/Team</p>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a href="<?= base_url('admin/kategori_staff') ?>" class="nav-link">
                   <i class="fas fa-tags nav-icon"></i>
                   <p>Kategori Staff/Team</p>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </li>
           <!-- pengguna -->
