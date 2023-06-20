@@ -37,7 +37,7 @@ foreach ($staff as $staff) { ?>
 				</small>
 			</td>
             <td>
-				<small><i class="fa fa-phone"></i> <?php if($staff['konfirmasi']==1){echo "success";}else{echo "proses";}; ?>
+				<small><?php if($staff['konfirmasi']==1){echo "success";}else{echo "proses";}; ?>
 				
 				</small>
 			</td>
