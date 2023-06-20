@@ -51,7 +51,8 @@ class Loginfrondend extends CI_Controller {
             
             redirect('/', 'refresh');
         }else{
-           echo "<h3>Username atau Password salah</h3>";
+            $data["title"] = "LOGIN GAGAL MOHON CEK PASSWORD DAN USERNAME ANDA";
+            $this->load->view("frondend/notive/error" , $data);
         }
 
         }
