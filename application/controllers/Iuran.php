@@ -35,9 +35,6 @@ class Iuran extends CI_Controller {
 		}else{
 			$config['upload_path']          = './pembayaran/';
 			$config['allowed_types']        = '*';
-			$config['max_size']             = 1000;
-			$config['max_width']            = 10240;
-			$config['max_height']           = 7680;
 			$config['encrypt_name']           = TRUE;
 
 			$this->load->library('upload', $config);
