@@ -3,11 +3,10 @@
 	<thead>
 		<tr>
 			<th width="5%">No</th>
-			<th width="5%">Gambar</th>
 			<th width="20%">Nama</th>
 			<th width="15%">Jabatan</th>
-			<th width="20%">Kontak</th>
-			<th width="15%">Alamat</th>
+			<th width="15%">Kontak</th>
+			<th width="25%">Alamat</th>
 			<th></th>
 		</tr>
 	</thead>
@@ -18,8 +17,6 @@ $db      = \Config\Database::connect();
 foreach ($staff as $staff) { ?>
 		<tr>
 			<td><?= $no ?></td>
-			<td> -
-			</td>
 			<td>
                 <?= $staff['nama_lengkap'] ?>
 				<small>
@@ -28,12 +25,12 @@ foreach ($staff as $staff) { ?>
 				</small>
 			</td>
 			<td>
-				-</i> <?= $staff['Pekerjaan'] ?>
-				-</i> <?= $staff['tempat_bekerja'] ?>
+            <br><i class="fa fa-users"></i> <?= $staff['Pekerjaan'] ?>
+            <br><i class="fa fa-users"></i> <?= $staff['tempat_bekerja'] ?>
                 
             </td>
 			<td><small><i class="fa fa-phone"></i> <?= $staff['no_telp'] ?>
-				-</i> <?= $staff['no_ktp'] ?>
+            <br><i class="fa fa-user"></i> <?= $staff['no_ktp'] ?>
 				<br><i class="fa fa-globe"></i> <?= $staff['akun_instagram'] ?>
 				</small>
 			</td>
