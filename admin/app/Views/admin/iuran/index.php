@@ -11,7 +11,8 @@
 			<th width="5%">NAMA </th>
 			<th width="20%">Jumlah</th>
 			<th width="20%">PHONE</th>
-			<th width="30%">ALAMAT</th>
+			<th width="30%">image</th>
+			<th width="30%">Status</th>
 			<th></th>
 		</tr>
 	</thead>
@@ -32,6 +33,11 @@ foreach ($staff as $staff) { ?>
 			
 			<td>
 			<small><a target="_BLANK" href="<?=base_url("/")."/../pembayaran/".$staff['foto'] ?>"> <img src="<?=base_url("/")."/../pembayaran/".$staff['foto'] ?>" width="100px" /></a>
+				
+				</small>
+			</td>
+            <td>
+				<small><i class="fa fa-phone"></i> <?php if($staff['konfirmasi']==1){echo "success";}else{echo "proses";}; ?>
 				
 				</small>
 			</td>
