@@ -18,11 +18,7 @@ $db      = \Config\Database::connect();
 foreach ($staff as $staff) { ?>
 		<tr>
 			<td><?= $no ?></td>
-			<td><?php if ($staff['gambar'] === '') {
-    echo '-';
-} else { ?>
-				<img src="<?= base_url('assets/upload/staff/thumbs/' . $staff['gambar']) ?>" class="img img-thumbnail">
-			<?php } ?>
+			<td> -
 			</td>
 			<td>
                 <?= $staff['nama_lengkap'] ?>
