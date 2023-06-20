@@ -70,7 +70,7 @@ $site        = $konfigurasi->listing();
             </ul>
           </li>
           <!-- Galeri -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-image"></i>
               <p>Galeri &amp; Banner
@@ -97,9 +97,9 @@ $site        = $konfigurasi->listing();
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <!-- Download -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-download"></i>
               <p>Data File Download
@@ -126,9 +126,9 @@ $site        = $konfigurasi->listing();
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <!-- Video -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fab fa-youtube"></i>
               <p>Data Video Youtube
@@ -149,7 +149,7 @@ $site        = $konfigurasi->listing();
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <!-- pengguna -->
           <li class="nav-item">
             <a href="<?= base_url('admin/client') ?>" class="nav-link">
