@@ -67,7 +67,7 @@
                 <label for="floatingInputEmail">NO KK</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="tempat_lahir" required>
+                <input type="date" class="form-control rounded-3" name="tempat_lahir" required>
                 <label for="floatingInputEmail">TEMPAT LAHIR</label>
               </div>
               <div class="form-floating mb-3">
