@@ -17,7 +17,7 @@
 	</div>
 </div>
 <div class="form-group row">
-	<label class="col-3">Jenis, Status Staff</label>
+	<label class="col-3">Status</label>
 	
 	<div class="col-9">
 		<select name="konfirmasi" class="form-control">
