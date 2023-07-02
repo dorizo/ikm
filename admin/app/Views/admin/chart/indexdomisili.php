@@ -12,7 +12,7 @@ $querydata = $db->query('SELECT nama , kode FROM (SELECT kode , nama,CHAR_LENGTH
 $arraydata = array();
 $countdata = array();
 foreach ($querydata as $key => $value) {
- $MMMMMMM = $db->query("select count(*) as counter from member where kab_asal='".$value["kode"]."'");
+ $MMMMMMM = $db->query("select count(*) as counter from member where kab_tinggal='".$value["kode"]."'");
  $row   = $MMMMMMM->getRow();
  $countdata[$key] = $row->counter;
   $arraydata[$key] = $value["nama"]; 

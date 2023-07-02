@@ -48,7 +48,7 @@ class Chart extends BaseController
        
         $data = ['title' => 'Data Chart: ' . $total['total'],
             'client'     => $client,
-            'content'    => 'admin/chart/index',
+            'content'    => 'admin/chart/indexdomisili',
         ];
         echo view('admin/layout/wrapper', $data);
     }
