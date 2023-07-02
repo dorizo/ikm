@@ -154,7 +154,14 @@
             
                 
               </div>
-
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" name="ibu" required>
+                <label for="floatingInputEmail">Nama Ibu</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" name="bapak" required>
+                <label for="floatingInputEmail">Nama Bapak</label>
+              </div>
               <div class="form-floating mb-3">
                 <select class="form-control rounded-3" name="Pekerjaan" required>
                   <option value="Pegawai">Pegawai</option>

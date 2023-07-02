@@ -235,6 +235,12 @@ $site        = $konfigurasi->listing();
               <p>iuran</p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="<?= base_url('admin/chart') ?>" class="nav-link">
+              <i class="nav-icon fas fa-file-pdf"></i>
+              <p>Chart</p>
+            </a>
+          </li>
           <!-- panduan -->
           <li class="nav-item">
             <a href="<?= base_url('admin/panduan') ?>" class="nav-link">
