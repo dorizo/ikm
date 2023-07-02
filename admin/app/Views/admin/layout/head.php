@@ -56,6 +56,8 @@ $site        = $konfigurasi->listing();
          z-index:1151 !important;
     }
   </style>
+  
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
