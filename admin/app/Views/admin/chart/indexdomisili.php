@@ -14,7 +14,7 @@ $countdata = array();
 foreach ($querydata as $key => $value) {
  $MMMMMMM = $db->query("select count(*) as counter from member where kab_tinggal='".$value["kode"]."'");
  $row   = $MMMMMMM->getRow();
- $countdata[$key] = $row->counter;
+ $countdata[$key] = (int)$row->counter;
   $arraydata[$key] = $value["nama"]; 
 }
 ?>
@@ -43,33 +43,29 @@ foreach ($querydata as $key => $value) {
 </div>
 
 
-<div id="chartEEEE">
-</div>
+        <div id="chart">
+          <div id="ssssssssssss">
+          </div>
+        </div>
 
 <style>
 
 #chart {
-  min-height: 650px;
-  
-  border:1px solid #F00;
+  min-height: 500px;
 }
 </style>
 
 <script>
           var options = {
-        chart: {
-          type: 'bar'
-        },
-        series: [{
-          name: 'sales',
-          data: <?=json_encode($countdata)?>
-        }],
-        xaxis: {
-          categories: <?=json_encode($arraydata)?>
-        }
-      }
+            chart: {
+              type: 'pie',
+              height:500,
+            },
+            series: <?=json_encode($countdata)?>, 
+            labels : <?=json_encode($arraydata)?>,
+          }
 
-      var chart = new ApexCharts(document.querySelector("#chartEEEE"), options);
+      var chart = new ApexCharts(document.querySelector("#ssssssssssss"), options);
 
       chart.render();
       
