@@ -114,7 +114,7 @@
                   </div>
                   
                   <div class="form-floating mb-3">
-                    <input  oninput="this.value = this.value.toUpperCase()"  oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="alamatRumah_asal" required>
+                    <input   oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="alamatRumah_asal" required>
                     <label for="floatingInputEmail">ALAMAT Rumah (komplek rt rw no rumah)</label>
                   </div>
                 </div>
@@ -168,6 +168,8 @@
                 <select class="form-control rounded-3" name="Pekerjaan" required>
                   <option value="Pegawai">Pegawai</option>
                   <option value="Usaha">Usaha</option>
+                  <option value="irt">Ibu Rumah Tangga</option>
+                  <option value="mencari pekerjaan">sedang mencari kerja</option>
                 </select>
                 <label for="floatingInputEmail">Pekerjaan</label>
               </div>

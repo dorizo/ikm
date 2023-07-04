@@ -51,7 +51,7 @@
 
               <div class="input-group mb-3" id="show_hide_password">
                 <div class="form-floating flex-grow-1">
-                  <input type="password" class="form-control rounded-3 rounded-end-0 border-end-0" name="password">
+                  <input type="password"  oninput="this.value = this.value.toUpperCase()"  class="form-control rounded-3 rounded-end-0 border-end-0" name="password">
                   <label for="floatingInputPassword">Password</label>
                 </div>
                 <span class="input-group-text bg-transparent rounded-start-0 rounded-3"><i class="bi bi-eye-slash"></i></span>
