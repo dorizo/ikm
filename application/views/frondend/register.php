@@ -46,7 +46,7 @@
             <form method="post">
 
               <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="nama_lengkap" required>
+                <input  oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="nama_lengkap" required>
                 <label for="floatingInputEmail">NAMA LENGKAP</label>
               </div>
               <div class="form-floating mb-3">
@@ -57,17 +57,9 @@
                 <label for="floatingInputEmail">JENIS KELAMIN</label>
               </div>
               
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="no_ktp" required>
-                <label for="floatingInputEmail">NO KTP</label>
-              </div>
               
               <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="no_kk" required>
-                <label for="floatingInputEmail">NO KK</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="date" class="form-control rounded-3" name="tempat_lahir" required>
+                <input  oninput="this.value = this.value.toUpperCase()" type="date" class="form-control rounded-3" name="tempat_lahir" required>
                 <label for="floatingInputEmail">TEMPAT LAHIR</label>
               </div>
               <div class="form-floating mb-3">
@@ -120,6 +112,11 @@
                     </select>
                     <label for="floatingInputEmail">Desa</label>
                   </div>
+                  
+                  <div class="form-floating mb-3">
+                    <input  oninput="this.value = this.value.toUpperCase()"  oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="alamatRumah_asal" required>
+                    <label for="floatingInputEmail">ALAMAT Rumah (komplek rt rw no rumah)</label>
+                  </div>
                 </div>
               </div>
               
@@ -149,17 +146,22 @@
                     </select>
                     <label for="floatingInputEmail">Desa</label>
                   </div>
+                  <div class="form-floating mb-3">
+                    <input  oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="alamatRumah_tinggal" required>
+                    <label for="floatingInputEmail">ALAMAT Rumah (komplek rt rw no rumah)</label>
+                  </div>
+              
                 </div>
                 
             
                 
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="ibu" required>
+                <input  oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="ibu" required>
                 <label for="floatingInputEmail">Nama Ibu</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="bapak" required>
+                <input  oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="bapak" required>
                 <label for="floatingInputEmail">Nama Bapak</label>
               </div>
               <div class="form-floating mb-3">
@@ -172,21 +174,17 @@
 
 
               <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="tempat_bekerja" required>
+                <input  oninput="this.value = this.value.toUpperCase()" type="text" class="form-control rounded-3" name="tempat_bekerja" required>
                 <label for="floatingInputEmail">Nama Tempat Gawe</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" name="akun_instagram" required>
-                <label for="floatingInputEmail"> Akun Instagram/Facebook </label>
               </div>
               
               <div class="form-floating mb-3">
-                <input type="tel" class="form-control rounded-3" name="no_telp" required>
+                <input  oninput="this.value = this.value.toUpperCase()" type="tel" class="form-control rounded-3" name="no_telp" required>
                 <label for="floatingInputEmail">No Telp / WA (USER LOGIN) </label>
               </div>
               <div class="input-group mb-3" id="show_hide_password">
                 <div class="form-floating flex-grow-1">
-                  <input type="password" class="form-control rounded-3 rounded-end-0 border-end-0" name="password" placeholder="Enter Password" required>
+                  <input  oninput="this.value = this.value.toUpperCase()" type="password" class="form-control rounded-3 rounded-end-0 border-end-0" name="password" placeholder="Enter Password" required>
                   <label for="floatingInputPassword">Password</label>
                 </div>
                 <span class="input-group-text bg-transparent rounded-start-0 rounded-3"><i class="bi bi-eye-slash"></i></span>
@@ -205,7 +203,7 @@
 
      <!--start to footer-->
     <footer class="page-footer fixed-bottom border-top d-flex align-items-center justify-content-center">
-    <input type="submit" class="btn btn-dark btn-ecomm rounded-3" value="DAFTAR">
+    <input  oninput="this.value = this.value.toUpperCase()" type="submit" class="btn btn-dark btn-ecomm rounded-3" value="DAFTAR">
     </footer>
     <!--end to footer-->
 
