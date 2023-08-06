@@ -5,6 +5,15 @@
 
         <div class="card rounded-3 border-0 bg-transparent">
           <div class="card-body">
+            <div class="card p-3 mb-2">
+              <form method="get">
+                <div class="row">
+                  <div class="col-9"><input type="text" name="search" class="form-control" /></div>
+                  <div class="col-2"><input type="submit"  class="btn btn-success" value="cari" /></div>
+                  
+                </div>
+              </form>
+            </div>
               
           <?php
           foreach ($dataresult as $key => $value) {

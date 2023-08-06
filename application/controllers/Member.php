@@ -21,7 +21,12 @@ class Member extends CI_Controller {
 
     public function index(){
 		$data["title"] = "IKATAN KELUARGA MANDALA";
-		$data["dataresult"] = $this->db->query("Select * from member")->result_array();
+        if($this->input->get()){
+            
+		$data["dataresult"] = $this->db->query("Select * from member where nama_lengkap LIKE '%".$this->input->get('search')."%'")->result_array();
+        }else{
+            $data["dataresult"] = $this->db->query("Select * from member")->result_array();  
+        }
 		
 		$this->load->view('frondend/member' , $data);
 
