@@ -26,8 +26,11 @@ class Berita extends CI_Controller {
 
     }
 
-    public function login(){
-		echo "sss";
+    public function detail($id){
+		$data["title"] = $id;
+		$data["idberita"] = $id;
+		$this->load->view('frondend/beritadetail' , $data);
+		
 
     }
 }

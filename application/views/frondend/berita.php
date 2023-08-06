@@ -24,7 +24,7 @@
          <h6 class="fw-bold mb-1 text-dark"><?=$value["judul_berita"]?></h6>
          <p class="mb-0"> <?php print_r($value["ringkasan"])?></p>
         <div class="mt-3 hstack gap-2">
-          <a type="button" class="btn btn-sm btn-danger border rounded-3">DETAIL</a>
+          <a type="button" href="<?=base_url("berita/detail/".$value["id_berita"])?>" class="btn btn-sm btn-danger border rounded-3">DETAIL</a>
        </div>
       </div>
      </div>
