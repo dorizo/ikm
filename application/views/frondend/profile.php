@@ -18,7 +18,7 @@
       
 
 <div class="mb-3">
-<a class="profile-item" href="my-profile.html">
+<a class="profile-item" href="#">
  <div class="card rounded-3">
   <div class="card-body py-2">
       <div class="d-flex align-items-center gap-3 fs-6">
@@ -33,7 +33,7 @@
 
 
 <div class="mb-3">
-<a class="profile-item" href="addresses.html">
+<a class="profile-item" href="#">
  <div class="card rounded-3">
   <div class="card-body py-2">
       <div class="d-flex align-items-center gap-3 fs-6">

@@ -15,6 +15,12 @@
                 <div class="name">Uang kas</div>
               </div>
             </a>
+            <a class="nav-link" href="<?=base_url("member")?>">
+              <div class="d-flex flex-column align-items-center">
+                <div class="icon"><i class="bi bi-person"></i></div>
+                <div class="name">Member</div>
+              </div>
+            </a>
             <a class="nav-link"  href="<?=base_url("profile")?>">
               <div class="d-flex flex-column align-items-center">
                 <div class="icon"><i class="bi bi-person"></i></div>
